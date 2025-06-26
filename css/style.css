@@ -3,6 +3,10 @@ a{
     color: inherit;  
 }
 
+.nav-icon{
+    color: white;
+}
+
 .site-title {
     h1{
         font-size: 16px;
@@ -48,6 +52,11 @@ input::placeholder{
 input{
     background-color: rgb(30,32,43);
     color: white;
+    border: 1px solid rgb(30,32,43) ;
+}
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
 }
 
 .btn-primary {
@@ -120,8 +129,8 @@ input{
 
 .circle{
     background-color: #1e202b;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin-left: 5px;
 }
 
@@ -143,4 +152,33 @@ input{
 footer p {
     font-size: 14px;
     font-weight: 300;
+}
+
+
+
+
+/* Media style */
+
+
+
+@media (max-width: 768px) {
+    .back-ground{
+        min-height: 150vh;
+    }
+
+    .icons{
+        position: static !important;
+        padding-top: 40px;
+        padding-left: 45px;
+    }
+
+    footer input {
+        width: 90% !important;
+    }
+
+    .position-diraction2{
+        right: 12%;
+    }
+
+    
 }
