@@ -7,6 +7,20 @@ a{
     color: white;
 }
 
+.nav-item:hover{
+    border: 3px solid #009ad8;
+    color: #009ad8;
+    border-radius: 1rem;
+    padding: 0px 10px ;
+}
+
+.active{
+    border: 3px solid #009ad8;
+    color: #009ad8;
+    border-radius: 1rem;
+    padding: 0px 10px ;
+}
+
 .site-title {
     h1{
         font-size: 16px;
@@ -154,7 +168,9 @@ footer p {
     font-weight: 300;
 }
 
-
+.icons{
+    cursor: pointer;
+}
 
 
 /* Media style */
