@@ -33,7 +33,7 @@ searchInput.addEventListener('keyup',function(){
 async function getDataAboutWeather (){
     
     try{
-       var searchResponse = await fetch(`http://api.weatherapi.com/v1/search.json?key=7647da20c13c44c4957155416252606&q=${searchInput.value}`);
+       var searchResponse = await fetch(`https://api.weatherapi.com/v1/search.json?key=7647da20c13c44c4957155416252606&q=${searchInput.value}`);
        var searchData = await searchResponse.json(); 
        var lat = searchData[0].lat;
        var lon = searchData[0].lon;
